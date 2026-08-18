@@ -4,9 +4,9 @@ Team Project: Movie Discovery App - Dreams Hack
 
 
 Team members:
-Olawuyi Joy                       2020/1/101312SW 
-Moses Micah Ojonele     2024/1/95342SW
-Adewale Oluwafemi Chibuike  2024/1/98958sw
+1. Olawuyi Joy                       2020/1/101312SW 
+2. Moses Micah Ojonele     2024/1/95342SW
+3. Adewale Oluwafemi Chibuike  2024/1/98958sw
 
 
 Description:
