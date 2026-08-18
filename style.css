@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 15px 30px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+}
+/*logo*/
+.brand {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*navigation links*/
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: black;
+  font-size: 15px;
+}
+.nav-links a.active,
+.nav-links a:hover {
+  color: red;
+  font-weight: 500;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-box input {
+  background-color: black;
+  color: white;
+  padding: 8px 10px;
+}
+.watchlist-icon {
+  background-color: black;
+  padding: 8px 14px;
+  color: white;
+  font-weight: bold;
+}
+/*hero section*/
+.hero {
+  background-color: black;
+  padding: 60px 30px;
+}
+.hero-sub {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.hero-title {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: rgb(150, 2, 2);
+  color: black;
+}
+
+/*browse section*/
+.section {
+  padding: 40px 30px;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.section-link {
+  color: white;
+}
+/*Genre filter buttons*/
+.genre-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.filter {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.filter.active,
+.filter:hover {
+  background-color: white;
+  color: black;
+}
+
+/*movie cards*/
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.movie-card {
+  background-color: black;
+  border: 1px solid white;
+}
+.poster {
+  position: relative;
+  height: 200px;
+}
+
+.poster-rating {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  color: white;
+  padding: 3px 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.add-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  color: red;
+  width: 50px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-body {
+  padding: 14px;
+}
+.card-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.card-sub {
+  font-size: 13px;
+  color: yellow;
+}
+/*fotter*/
+footer {
+  background-color: black;
+  padding: 20px 30px;
+  text-align: center;
+}
+footer .brand {
+  color: white;
+  font-size: 13px;
+}
+
+/*responsiveness*/
+header {
+  /* Tablets */
+
+  @media (max-width: 900px) {
+    .movie-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Phones */
+@media (max-width: 500px) {
+  .movie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-meta {
+    flex-wrap: wrap;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
