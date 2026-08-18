@@ -40,16 +40,16 @@ UI PAGES:
 4. Watchlist Page
 
 Technologies:
-HTML
-CSS
-JavaScript
-TMDB API
+1. HTML
+2. CSS
+3. JavaScript
+4. TMDB API
 
 Features:
-Movie discovery
-Movie search
-Movie details
-Watchlist
-Responsive interface
-display trending Movies 
-personal Watchlist (Local Storage)
+1. Movie discovery
+2. Movie search
+3. Movie details
+4. Watchlist
+5. Responsive interface
+6. display trending Movies 
+7. personal Watchlist (Local Storage)
