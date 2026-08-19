@@ -53,3 +53,7 @@ Features:
 5. Responsive interface
 6. display trending Movies 
 7. personal Watchlist (Local Storage)
+
+
+Team members :
+commit/push to the repository → final code is merged → GitHub Pages deploys the final version.
