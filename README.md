@@ -57,3 +57,6 @@ Features:
 
 Team members :
 commit/push to the repository → final code is merged → GitHub Pages deploys the final version.
+
+Live Application:
+https://micah613.github.io/movie-discovery-and-watchlist-application/
