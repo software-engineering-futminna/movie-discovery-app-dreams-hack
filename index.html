@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemaflix - Movie Discovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  HEADER -->
+    <header>
+      <div class="brand">CINEMAFLIX</div>
+
+      <!-- Main navigation links -->
+      <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#watchlist">Watchlist</a>
+      </nav>
+
+      <!-- Search box-->
+      <div class="nav-right">
+        <form class="search-box" role="search">
+          <input type="search" placeholder="Search titles..." />
+        </form>
+        <button class="watchlist-icon search-btn">Search</button>
+      </div>
+    </header>
+
+    <!-- trending movie -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-sub">Trending Today</div>
+        <h1 class="hero-title">The Last Man</h1>
+
+        <!-- Rating, year, genre, duration-->
+        <div class="hero-meta">
+          <span class="rating">★ 8.7</span>
+          <span>2026</span>
+          <span>Sci-Fi</span>
+          <span>2h 18m</span>
+        </div>
+
+        <p class="hero-description">
+          A stranded man, an engineer must choose between saving the family or
+          anything.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary">+ Add to Watchlist</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BROWSE SECTION -->
+    <section class="section">
+      <div class="section-head">
+        <div class="section-title">Browse</div>
+        <a href="#" class="section-link">View All</a>
+      </div>
+
+      <!-- Genre filter buttons -->
+      <div class="genre-filters">
+        <button class="filter active" data-genre="all">All</button>
+        <button class="filter" data-genre="action">Action</button>
+        <button class="filter" data-genre="drama">Drama</button>
+        <button class="filter" data-genre="scifi">Sci-Fi</button>
+        <button class="filter" data-genre="comedy">Comedy</button>
+        <button class="filter" data-genre="horror">Horror</button>
+        <button class="filter" data-genre="animation">Animation</button>
+      </div>
+
+      <!-- Grid holding movie cards -->
+      <div class="movie-grid" id="browse-grid">
+        <article class="movie-card" data-genre="thriller">
+          <div class="poster p1">
+            <span class="poster-rating">★ 7.9</span>
+            <button
+              class="add-btn"
+              aria-label="Add Nightfall City to watchlist"
+            >
+              +
+            </button>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Nightfall City</h3>
+            <p class="card-sub">2025 · Thriller</p>
+          </div>
+        </article>
+
+        <article class="movie-card" data-genre="drama">
+          <div class="poster p2">
+            <span class="poster-rating">★ 8.2</span>
+            <button class="add-btn" aria-label="Add Blue Horizon to watchlist">
+              +
+            </button>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Blue Horizon</h3>
+            <p class="card-sub">2024 · Drama</p>
+          </div>
+        </article>
+
+        <article class="movie-card" data-genre="mystery">
+          <div class="poster p3">
+            <span class="poster-rating">★ 6.8</span>
+            <button class="add-btn" aria-label="Add Velvet Static to watchlist">
+              +
+            </button>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Velvet Static</h3>
+            <p class="card-sub">2026 · Mystery</p>
+          </div>
+        </article>
+
+        <article class="movie-card" data-genre="drama">
+          <div class="poster p4">
+            <span class="poster-rating">★ 9.1</span>
+            <button
+              class="add-btn"
+              aria-label="Add The Long Harvest to watchlist"
+            >
+              +
+            </button>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">The Long Harvest</h3>
+            <p class="card-sub">2023 · Drama</p>
+          </div>
+        </article>
+
+        <article class="movie-card" data-genre="animation">
+          <div class="poster p5">
+            <span class="poster-rating">★ 7.4</span>
+            <button class="add-btn" aria-label="Add Green Static to watchlist">
+              +
+            </button>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Green Static</h3>
+            <p class="card-sub">2025 · Animation</p>
+          </div>
+        </article>
+
+        <article class="movie-card" data-genre="action">
+          <div class="poster p6">
+            <span class="poster-rating">★ 8.5</span>
+            <button class="add-btn" aria-label="Add Ashwood to watchlist">
+              +
+            </button>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ashwood</h3>
+            <p class="card-sub">2024 · Action</p>
+          </div>
+        </article>
+
+        <article class="movie-card" data-genre="comedy">
+          <div class="poster p7">
+            <span class="poster-rating">★ 7.0</span>
+            <button class="add-btn" aria-label="Add Paper Moons to watchlist">
+              +
+            </button>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Paper Moons</h3>
+            <p class="card-sub">2026 · Comedy</p>
+          </div>
+        </article>
+
+        <article class="movie-card" data-genre="scifi">
+          <div class="poster p8">
+            <span class="poster-rating">★ 8.9</span>
+            <button class="add-btn" aria-label="Add Deep Current to watchlist">
+              +
+            </button>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Deep Current</h3>
+            <p class="card-sub">2025 · Sci-Fi</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Load More Pagination Button -->
+      <div class="load-more-container" id="load-more-container">
+        <button id="load-more-btn" class="btn btn-load-more">Load More Movies</button>
+      </div>
+    </section>
+
+    <!-- MOVIE DETAILS MODAL -->
+    <div id="movie-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-content movie-details-content">
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+        <div id="modal-body-content">
+          <!-- Dynamic details content injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER -->
+    <footer>
+      <div class="brand">&copy; 2026 CINEMAFLIX</div>
+    </footer>
+
+    <!-- JavaScript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
